@@ -1,0 +1,168 @@
+{
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "generate": "Generate",
+    "templates": "Templates",
+    "search": "Search...",
+    "login": "Login",
+    "signup": "Sign Up"
+  },
+  "hero": {
+    "title": "Create Ad Images",
+    "titleHighlight": "That Actually Sell",
+    "description": "With smart AI, create stunning ad images in seconds. Download in multiple formats and start selling immediately.",
+    "ctaStart": "Start Creating",
+    "ctaTemplates": "View Templates",
+    "stats": {
+      "templates": "Templates",
+      "faster": "Faster",
+      "sales": "More Sales"
+    }
+  },
+  "features": {
+    "title": "Features That Make Us Different",
+    "subtitle": "Complete tools for creating ads that actually convert",
+    "feature1": {
+      "title": "AI Image Generation",
+      "desc": "Create stunning images with smart AI. No design skills needed."
+    },
+    "feature2": {
+      "title": "Template Library",
+      "desc": "1000+ ready-to-use templates for every business type"
+    },
+    "feature3": {
+      "title": "Multi-Format Export",
+      "desc": "Download in JPG, PNG, WebP formats ready to use"
+    },
+    "feature4": {
+      "title": "Real-time Preview",
+      "desc": "See image previews live before downloading"
+    },
+    "feature5": {
+      "title": "Social Media Presets",
+      "desc": "Perfect sizes for Instagram, Facebook, TikTok"
+    },
+    "feature6": {
+      "title": "One-Click Download",
+      "desc": "Download images with one click, ready to use instantly"
+    }
+  },
+  "howItWorks": {
+    "title": "Easy to Use in Just 4 Steps",
+    "subtitle": "Choose Template → Customize Content → Generate Image → Download & Share"
+  },
+  "templates": {
+    "title": "Ready-to-Use Templates",
+    "subtitle": "Choose from beautifully designed templates",
+    "viewAll": "View All Templates"
+  },
+  "cta": {
+    "title": "Ready to Boost Your Sales?",
+    "description": "Start creating ads that sell today. Free for the first 7 days.",
+    "button": "Start Free"
+  },
+  "footer": {
+    "brand": "AdCraft AI",
+    "tagline": "Create ad images with smart AI",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "about": "About Us",
+    "contact": "Contact",
+    "blog": "Blog",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© 2026 AdCraft AI. All rights reserved.",
+    "social": "Facebook"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "recentDesigns": "Recent Designs",
+    "stats": "Statistics",
+    "designs": "Designs Created",
+    "downloads": "Downloads",
+    "views": "Views"
+  },
+  "generate": {
+    "title": "Generate",
+    "promptPlaceholder": "Describe the image you want to create... (e.g., 'Red car on fire, dramatic lighting, product ad style')",
+    "promptLabel": "Your Image Idea",
+    "textContent": "Text Content",
+    "headline": "Headline",
+    "headlineExample": "Flash Sale",
+    "headlineLabel": "Headline",
+    "subtext": "Subtext",
+    "subtextExample": "50% OFF",
+    "subtextLabel": "Subtext",
+    "cta": "CTA Button",
+    "ctaExample": "Shop Now",
+    "ctaLabel": "CTA Button",
+    "uploadImage": "Upload Image",
+    "settings": "Settings",
+    "size": "Size",
+    "aspectRatio": "Aspect Ratio",
+    "resolution": "Resolution",
+    "format": "Format",
+    "createImage": "Create Image",
+    "download": "Download",
+    "regenerate": "Regenerate",
+    "preview": "Preview",
+    "aiTools": "AI Tools",
+    "backgroundRemove": "Remove Background",
+    "objectRemove": "Remove Object",
+    "aiRewriteText": "Rewrite Text with AI",
+    "generateAdCopy": "Generate Ad Copy",
+    "aiSuggestHook": "AI Suggest Hook",
+    "advancedSettings": "Advanced Settings",
+    "brightness": "Brightness",
+    "contrast": "Contrast",
+    "saturation": "Saturation",
+    "blur": "Blur",
+    "opacity": "Opacity",
+    "resetFilters": "Reset"
+  },
+  "templatesPage": {
+    "title": "Templates",
+    "filter": "Filter",
+    "category": "Category",
+    "promotion": "Promotion",
+    "product": "Product",
+    "affiliate": "Affiliate",
+    "useTemplate": "Use This Template",
+    "templateDetails": "Template Details",
+    "category_label": "Category",
+    "status": "Status",
+    "downloads": "Downloads",
+    "rating": "Rating",
+    "features": "Features",
+    "availableSizes": "Available Sizes"
+  },
+  "language": {
+    "thai": "Thai",
+    "english": "English"
+  },
+  "filterPresets": {
+    "title": "Filter Presets",
+    "saveNewPreset": "Save Current as Preset",
+    "savePreset": "Save as Preset",
+    "editPreset": "Edit Preset",
+    "presetName": "Preset Name",
+    "namePlaceholder": "e.g., Vibrant Look, Vintage Style",
+    "description": "Description (Optional)",
+    "descriptionPlaceholder": "Add notes about this preset...",
+    "apply": "Apply",
+    "edit": "Edit",
+    "duplicate": "Copy",
+    "delete": "Delete",
+    "updatePreset": "Update",
+    "noPresets": "No presets saved yet",
+    "nameRequired": "Preset name is required",
+    "presetSaved": "Preset saved successfully",
+    "presetUpdated": "Preset updated successfully",
+    "presetDeleted": "Preset deleted successfully",
+    "presetLoaded": "Preset loaded successfully",
+    "presetDuplicated": "Preset duplicated successfully",
+    "confirmDelete": "Delete this preset?"
+  }
+}

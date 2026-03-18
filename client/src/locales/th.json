@@ -1,0 +1,168 @@
+{
+  "nav": {
+    "home": "หน้าแรก",
+    "dashboard": "แดชบอร์ด",
+    "generate": "สร้างภาพ",
+    "templates": "เทมเพลต",
+    "search": "ค้นหา...",
+    "login": "เข้าสู่ระบบ",
+    "signup": "สมัครสมาชิก"
+  },
+  "hero": {
+    "title": "สร้างภาพโฆษณา",
+    "titleHighlight": "ปิดยอดได้จริง",
+    "description": "ด้วย AI ที่ฉลาด สร้างภาพโฆษณาสวยงามในเวลาเพียงไม่กี่วินาที พร้อมดาวน์โหลดในรูปแบบต่างๆ",
+    "ctaStart": "เริ่มสร้างเลย",
+    "ctaTemplates": "ดูเทมเพลต",
+    "stats": {
+      "templates": "เทมเพลต",
+      "faster": "เร็วขึ้น",
+      "sales": "ขายเพิ่ม"
+    }
+  },
+  "features": {
+    "title": "ฟีเจอร์ที่ทำให้เราแตกต่าง",
+    "subtitle": "เครื่องมือที่ครบครัน สำหรับสร้างภาพโฆษณาที่ขายได้จริง",
+    "feature1": {
+      "title": "AI Image Generation",
+      "desc": "สร้างภาพสวยงามด้วย AI ที่ฉลาด ไม่ต้องมีทักษะการออกแบบ"
+    },
+    "feature2": {
+      "title": "Template Library",
+      "desc": "1000+ เทมเพลตพร้อมใช้ สำหรับทุกประเภทธุรกิจ"
+    },
+    "feature3": {
+      "title": "Multi-Format Export",
+      "desc": "ดาวน์โหลดในรูปแบบ JPG, PNG, WebP พร้อมใช้"
+    },
+    "feature4": {
+      "title": "Real-time Preview",
+      "desc": "ดูตัวอย่างภาพแบบสดๆ ก่อนดาวน์โหลด"
+    },
+    "feature5": {
+      "title": "Social Media Presets",
+      "desc": "ขนาดที่เหมาะสมสำหรับ Instagram, Facebook, TikTok"
+    },
+    "feature6": {
+      "title": "One-Click Download",
+      "desc": "ดาวน์โหลดภาพด้วยคลิกเดียว พร้อมใช้ทันที"
+    }
+  },
+  "howItWorks": {
+    "title": "ใช้งานง่ายเพียง 4 ขั้นตอน",
+    "subtitle": "เลือกเทมเพลต → แก้ไขข้อความ → สร้างภาพ → ดาวน์โหลด"
+  },
+  "templates": {
+    "title": "เทมเพลตที่พร้อมใช้",
+    "subtitle": "เลือกจากเทมเพลตที่ออกแบบมาอย่างสวยงาม",
+    "viewAll": "ดูเทมเพลตทั้งหมด"
+  },
+  "cta": {
+    "title": "พร้อมที่จะเพิ่มยอดขายหรือยัง?",
+    "description": "เริ่มสร้างภาพโฆษณาที่ขายได้จริงในวันนี้ ฟรีสำหรับ 7 วันแรก",
+    "button": "เริ่มใช้งานฟรี"
+  },
+  "footer": {
+    "brand": "AdCraft AI",
+    "tagline": "สร้างภาพโฆษณาด้วย AI ที่ฉลาด",
+    "product": "ผลิตภัณฑ์",
+    "company": "บริษัท",
+    "legal": "ทางกฎหมาย",
+    "about": "เกี่ยวกับเรา",
+    "contact": "ติดต่อเรา",
+    "blog": "บล็อก",
+    "privacy": "นโยบายความเป็นส่วนตัว",
+    "terms": "เงื่อนไขการใช้งาน",
+    "copyright": "© 2026 AdCraft AI. สงวนลิขสิทธิ์",
+    "social": "Facebook"
+  },
+  "dashboard": {
+    "title": "แดชบอร์ด",
+    "recentDesigns": "การออกแบบล่าสุด",
+    "stats": "สถิติ",
+    "designs": "ภาพที่สร้าง",
+    "downloads": "ดาวน์โหลด",
+    "views": "ครั้งที่ดู"
+  },
+  "generate": {
+    "title": "สร้างภาพ",
+    "promptPlaceholder": "อธิบายภาพที่คุณต้องการสร้าง... (เช่น 'รถสีแดงไฟไหม้ ไฟแสงดรามาติก สไตล์โฆษณาสินค้า')",
+    "promptLabel": "ไอเดียภาพของคุณ",
+    "textContent": "เนื้อหาข้อความ",
+    "headline": "หัวข้อ",
+    "headlineExample": "Flash Sale",
+    "headlineLabel": "Headline",
+    "subtext": "ข้อความย่อย",
+    "subtextExample": "50% OFF",
+    "subtextLabel": "Subtext",
+    "cta": "ปุ่ม CTA",
+    "ctaExample": "Shop Now",
+    "ctaLabel": "CTA Button",
+    "uploadImage": "อัปโหลดรูปภาพ",
+    "settings": "การตั้งค่า",
+    "size": "ขนาด",
+    "aspectRatio": "อัตราส่วน",
+    "resolution": "ความละเอียด",
+    "format": "รูปแบบ",
+    "createImage": "สร้างภาพ",
+    "download": "ดาวน์โหลด",
+    "regenerate": "สร้างใหม่",
+    "preview": "ตัวอย่าง",
+    "aiTools": "เครื่องมือ AI",
+    "backgroundRemove": "ลบพื้นหลัง",
+    "objectRemove": "ลบวัตถุ",
+    "aiRewriteText": "เขียนข้อความใหม่ด้วย AI",
+    "generateAdCopy": "สร้างข้อความโฆษณา",
+    "aiSuggestHook": "AI แนะนำ Hook",
+    "advancedSettings": "การตั้งค่าขั้นสูง",
+    "brightness": "ความสว่าง",
+    "contrast": "ความคมชัด",
+    "saturation": "ความอิ่มสี",
+    "blur": "ความเบลอ",
+    "opacity": "ความทึบ",
+    "resetFilters": "รีเซ็ต"
+  },
+  "templatesPage": {
+    "title": "เทมเพลต",
+    "filter": "ตัวกรอง",
+    "category": "หมวดหมู่",
+    "promotion": "โปรโมชัน",
+    "product": "สินค้า",
+    "affiliate": "Affiliate",
+    "useTemplate": "ใช้เทมเพลตนี้",
+    "templateDetails": "รายละเอียดเทมเพลต",
+    "category_label": "หมวดหมู่",
+    "status": "สถานะ",
+    "downloads": "ดาวน์โหลด",
+    "rating": "คะแนน",
+    "features": "ฟีเจอร์",
+    "availableSizes": "ขนาดที่รองรับ"
+  },
+  "language": {
+    "thai": "ไทย",
+    "english": "English"
+  },
+  "filterPresets": {
+    "title": "บันทึกการตั้งค่า",
+    "saveNewPreset": "บันทึกการตั้งค่าปัจจุบัน",
+    "savePreset": "บันทึกเป็นการตั้งค่า",
+    "editPreset": "แก้ไขการตั้งค่า",
+    "presetName": "ชื่อการตั้งค่า",
+    "namePlaceholder": "เช่น สีสดใส สไตล์วินเทจ",
+    "description": "คำอธิบาย (ไม่บังคับ)",
+    "descriptionPlaceholder": "เพิ่มหมายเหตุเกี่ยวกับการตั้งค่านี้...",
+    "apply": "ใช้งาน",
+    "edit": "แก้ไข",
+    "duplicate": "สำเนา",
+    "delete": "ลบ",
+    "updatePreset": "อัปเดต",
+    "noPresets": "ยังไม่มีการตั้งค่าที่บันทึกไว้",
+    "nameRequired": "กรุณากำหนดชื่อการตั้งค่า",
+    "presetSaved": "บันทึกการตั้งค่าสำเร็จ",
+    "presetUpdated": "อัปเดตการตั้งค่าสำเร็จ",
+    "presetDeleted": "ลบการตั้งค่าสำเร็จ",
+    "presetLoaded": "โหลดการตั้งค่าสำเร็จ",
+    "presetDuplicated": "สำเนาการตั้งค่าสำเร็จ",
+    "confirmDelete": "ต้องการลบการตั้งค่านี้หรือไม่?"
+  }
+}
