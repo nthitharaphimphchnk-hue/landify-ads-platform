@@ -94,13 +94,13 @@ export default function FilterPresetsPanel({
   };
 
   return (
-    <div className="bg-card border border-border rounded-lg overflow-hidden">
+    <div className="glass-panel glass-panel-hover overflow-hidden">
       {/* Header */}
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className="w-full px-4 py-3 flex items-center justify-between hover:bg-secondary/50 transition"
+        className="tool-row m-2 flex w-[calc(100%-1rem)] items-center justify-between px-4 py-3 text-left"
       >
-        <h3 className="font-semibold text-sm">
+        <h3 className="panel-headline text-sm font-semibold">
           {t("filterPresets.title") || "Filter Presets"}
         </h3>
         <ChevronDown
@@ -112,7 +112,7 @@ export default function FilterPresetsPanel({
 
       {/* Content */}
       {isExpanded && (
-        <div className="px-4 py-4 space-y-3 border-t border-border max-h-96 overflow-y-auto">
+        <div className="max-h-96 space-y-3 overflow-y-auto border-t border-white/10 px-4 py-4">
           {/* Save New Preset Button */}
           <Button
             onClick={() => {
@@ -135,15 +135,15 @@ export default function FilterPresetsPanel({
               {presets.map((preset) => (
                 <div
                   key={preset.id}
-                  className="bg-secondary/30 border border-border/50 rounded p-3 space-y-2"
+                  className="tool-row space-y-2 rounded-[18px] p-3"
                 >
                   <div className="flex items-start justify-between gap-2">
                     <div className="flex-1 min-w-0">
-                      <h4 className="font-medium text-sm truncate">
+                      <h4 className="panel-headline truncate text-sm font-medium">
                         {preset.name}
                       </h4>
                       {preset.description && (
-                        <p className="text-xs text-muted-foreground truncate">
+                        <p className="panel-subtext truncate text-xs">
                           {preset.description}
                         </p>
                       )}
@@ -193,7 +193,7 @@ export default function FilterPresetsPanel({
               ))}
             </div>
           ) : (
-            <p className="text-xs text-muted-foreground text-center py-4">
+            <p className="panel-subtext py-4 text-center text-xs">
               {t("filterPresets.noPresets") || "No presets saved yet"}
             </p>
           )}
@@ -202,9 +202,9 @@ export default function FilterPresetsPanel({
 
       {/* Save Preset Modal */}
       {isSaveModalOpen && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-          <div className="bg-card border border-border rounded-lg p-6 max-w-md w-full space-y-4">
-            <h2 className="font-semibold font-poppins">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/55 p-4 backdrop-blur-sm">
+          <div className="glass-panel w-full max-w-md space-y-4 p-6">
+            <h2 className="panel-headline font-semibold font-poppins">
               {editingId
                 ? t("filterPresets.editPreset") || "Edit Preset"
                 : t("filterPresets.savePreset") || "Save as Preset"}
@@ -212,7 +212,7 @@ export default function FilterPresetsPanel({
 
             <div className="space-y-3">
               <div>
-                <label className="text-sm font-medium block mb-1">
+                <label className="mb-1 block text-sm font-medium panel-subtext">
                   {t("filterPresets.presetName") || "Preset Name"}
                 </label>
                 <input
@@ -222,12 +222,12 @@ export default function FilterPresetsPanel({
                   placeholder={
                     t("filterPresets.namePlaceholder") || "e.g., Vibrant Look"
                   }
-                  className="w-full px-3 py-2 bg-secondary border border-border rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="glass-input w-full px-3 py-2 text-sm focus:outline-none"
                 />
               </div>
 
               <div>
-                <label className="text-sm font-medium block mb-1">
+                <label className="mb-1 block text-sm font-medium panel-subtext">
                   {t("filterPresets.description") || "Description (Optional)"}
                 </label>
                 <textarea
@@ -237,7 +237,7 @@ export default function FilterPresetsPanel({
                     t("filterPresets.descriptionPlaceholder") ||
                     "Add notes about this preset..."
                   }
-                  className="w-full px-3 py-2 bg-secondary border border-border rounded text-sm focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+                  className="glass-input w-full resize-none px-3 py-2 text-sm focus:outline-none"
                   rows={3}
                 />
               </div>

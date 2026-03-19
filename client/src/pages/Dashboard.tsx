@@ -127,6 +127,13 @@ export default function Dashboard() {
     return date.toLocaleDateString();
   };
 
+  const statCards = [
+    { label: "Total Designs", value: "24", icon: ImageIcon, accent: "Library" },
+    { label: "This Month", value: "8", icon: LayoutTemplate, accent: "Monthly" },
+    { label: "Downloads", value: "156", icon: Plus, accent: "Exported" },
+    { label: "Drafts Saved", value: drafts.length.toString(), icon: Clock, accent: "Synced" },
+  ];
+
   return (
     <div className="min-h-screen bg-transparent text-foreground">
       <Header title="Dashboard" subtitle="Welcome back" showSearch />
@@ -141,24 +148,26 @@ export default function Dashboard() {
 
             {/* Welcome Section */}
             <div className="mb-8">
-              <h1 className="text-3xl font-bold font-poppins mb-2">Welcome back, Alex!</h1>
-              <p className="text-muted-foreground">Here's what you've been creating</p>
+              <h1 className="panel-headline mb-2 text-3xl font-bold font-poppins">Welcome back, Alex!</h1>
+              <p className="panel-subtext">Here's what you've been creating</p>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-              {[
-                { label: "Total Designs", value: "24", icon: ImageIcon },
-                { label: "This Month", value: "8", icon: LayoutTemplate },
-                { label: "Downloads", value: "156", icon: Plus },
-                { label: "Drafts Saved", value: drafts.length.toString(), icon: Clock },
-              ].map((stat, idx) => (
-                <div key={idx} className="bg-card border border-border rounded-lg p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-muted-foreground text-sm">{stat.label}</span>
-                    <stat.icon className="w-5 h-5 text-primary" />
+            <div className="mb-8 grid grid-cols-1 gap-6 md:grid-cols-4">
+              {statCards.map((stat, idx) => (
+                <div key={idx} className="glass-panel glass-panel-hover p-6">
+                  <div className="mb-5 flex items-start justify-between">
+                    <div>
+                      <span className="panel-subtext text-sm">{stat.label}</span>
+                      <div className="mt-1 text-[11px] font-orbitron tracking-[0.18em] text-primary/70">
+                        {stat.accent}
+                      </div>
+                    </div>
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-primary/20 bg-primary/12 shadow-[0_0_18px_rgba(255,45,45,0.2)]">
+                      <stat.icon className="h-5 w-5 text-primary" />
+                    </div>
                   </div>
-                  <div className="text-3xl font-bold font-poppins">{stat.value}</div>
+                  <div className="panel-headline text-4xl font-bold font-poppins">{stat.value}</div>
                 </div>
               ))}
             </div>
@@ -167,14 +176,14 @@ export default function Dashboard() {
             {drafts.length > 0 && (
               <div className="mb-8">
                 <div className="flex items-center justify-between mb-4">
-                  <h2 className="text-xl font-bold font-poppins flex items-center gap-2">
+                  <h2 className="panel-headline flex items-center gap-2 text-xl font-bold font-poppins">
                     <Clock className="w-5 h-5 text-primary" />
                     Saved Drafts
                   </h2>
                   <div className="flex items-center gap-3">
                     {selectedDrafts.size > 0 && (
                       <>
-                        <span className="text-sm text-muted-foreground">
+                        <span className="text-sm panel-subtext">
                           {selectedDrafts.size} selected
                         </span>
                         <Button
@@ -195,7 +204,7 @@ export default function Dashboard() {
                     >
                       {selectedDrafts.size === drafts.length ? "Deselect All" : "Select All"}
                     </Button>
-                    <span className="text-sm text-muted-foreground">{drafts.length} drafts</span>
+                    <span className="text-sm panel-subtext">{drafts.length} drafts</span>
                   </div>
                 </div>
 
@@ -203,10 +212,10 @@ export default function Dashboard() {
                   {drafts.map((draft) => (
                     <div
                       key={draft.id}
-                      className={`relative bg-card border rounded-lg p-4 transition cursor-pointer ${
+                      className={`glass-panel glass-panel-hover relative cursor-pointer p-4 ${
                         selectedDrafts.has(draft.id)
                           ? "border-primary bg-primary/5"
-                          : "border-border hover:border-primary/50"
+                          : ""
                       }`}
                       onClick={() => handleToggleSelect(draft.id)}
                     >
@@ -216,7 +225,7 @@ export default function Dashboard() {
                         </div>
                       )}
                       {draft.imageData && (
-                        <div className="mb-3 rounded-lg overflow-hidden bg-secondary h-32">
+                        <div className="preview-frame mb-3 h-32 overflow-hidden rounded-[18px]">
                           <img
                             src={draft.imageData}
                             alt={draft.title}
@@ -226,11 +235,11 @@ export default function Dashboard() {
                       )}
 
                       <div className="space-y-2">
-                        <h3 className="font-semibold font-poppins truncate">{draft.title}</h3>
-                        <p className="text-xs text-muted-foreground">
+                        <h3 className="panel-headline truncate font-semibold font-poppins">{draft.title}</h3>
+                        <p className="text-xs panel-subtext">
                           {draft.headline} • {draft.size}
                         </p>
-                        <p className="text-xs text-muted-foreground">
+                        <p className="text-xs panel-subtext">
                           Saved {formatDate(draft.updatedAt)}
                         </p>
                       </div>
@@ -247,7 +256,7 @@ export default function Dashboard() {
                       </Button>
                         <button
                           onClick={() => handleDeleteDraft(draft.id)}
-                          className="px-3 py-2 bg-destructive/20 border border-destructive/30 rounded text-destructive hover:bg-destructive/30 transition"
+                          className="icon-3d-button px-3 py-2 text-destructive hover:text-destructive"
                         >
                           <Trash2 className="w-4 h-4" />
                         </button>
@@ -260,21 +269,21 @@ export default function Dashboard() {
 
             {/* Recent Designs */}
             <div>
-              <h2 className="text-xl font-bold font-poppins mb-4">Recent Designs</h2>
+              <h2 className="panel-headline mb-4 text-xl font-bold font-poppins">Recent Designs</h2>
 
-              <div className="space-y-2">
+              <div className="space-y-3">
                 {recentDesigns.map((design) => (
                   <div
                     key={design.id}
-                    className="bg-card border border-border rounded-lg p-4 flex items-center justify-between hover:border-primary/50 transition cursor-pointer"
+                    className="glass-panel glass-panel-hover flex cursor-pointer items-center justify-between gap-4 p-4"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-secondary rounded-lg flex items-center justify-center">
-                        <ImageIcon className="w-6 h-6 text-primary" />
+                      <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-primary/18 bg-primary/12 shadow-[0_0_16px_rgba(255,45,45,0.18)]">
+                        <ImageIcon className="h-6 w-6 text-primary" />
                       </div>
                       <div>
-                        <p className="font-semibold">{design.title}</p>
-                        <p className="text-xs text-muted-foreground">
+                        <p className="panel-headline font-semibold">{design.title}</p>
+                        <p className="text-xs panel-subtext">
                           {design.category} • {design.date}
                         </p>
                       </div>

@@ -63,13 +63,13 @@ export default function ImageSettingsPanel({
   ];
 
   return (
-    <div className="bg-card border border-border rounded-lg overflow-hidden">
+    <div className="glass-panel glass-panel-hover overflow-hidden">
       {/* Header */}
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className="w-full px-4 py-3 flex items-center justify-between hover:bg-secondary/50 transition"
+        className="tool-row m-2 flex w-[calc(100%-1rem)] items-center justify-between px-4 py-3 text-left"
       >
-        <h3 className="font-semibold text-sm">
+        <h3 className="panel-headline text-sm font-semibold">
           {t("generate.advancedSettings") || "Advanced Settings"}
         </h3>
         <ChevronDown
@@ -81,12 +81,12 @@ export default function ImageSettingsPanel({
 
       {/* Content */}
       {isExpanded && (
-        <div className="px-4 py-4 space-y-4 border-t border-border">
+        <div className="space-y-4 border-t border-white/10 px-4 py-4">
           {settings.map((setting) => (
             <div key={setting.key}>
               <div className="flex items-center justify-between mb-2">
-                <label className="text-sm font-medium">{setting.label}</label>
-                <span className="text-xs text-muted-foreground">
+                <label className="text-sm font-medium panel-subtext">{setting.label}</label>
+                <span className="text-xs panel-subtext">
                   {filters[setting.key]}
                   {setting.unit}
                 </span>

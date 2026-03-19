@@ -202,6 +202,147 @@
       0 0 18px rgba(255, 45, 45, 0.22);
   }
 
+  .glass-panel {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%),
+      linear-gradient(135deg, rgba(255, 45, 45, 0.12) 0%, rgba(17, 17, 17, 0.6) 52%, rgba(255, 45, 45, 0.06) 100%);
+    backdrop-filter: blur(18px);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.12),
+      inset 0 -24px 42px rgba(0, 0, 0, 0.18),
+      0 22px 48px rgba(0, 0, 0, 0.34),
+      0 0 26px rgba(255, 45, 45, 0.16);
+  }
+
+  .glass-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.08) 20%, transparent 42%);
+    transform: translateX(-120%);
+    transition: transform 0.75s ease;
+    pointer-events: none;
+  }
+
+  .glass-panel:hover::before {
+    transform: translateX(140%);
+  }
+
+  .glass-panel-hover {
+    transition:
+      transform 0.35s ease,
+      box-shadow 0.35s ease,
+      border-color 0.35s ease;
+  }
+
+  .glass-panel-hover:hover {
+    transform: translateY(-6px) scale(1.01);
+    border-color: rgba(255, 45, 45, 0.28);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.14),
+      inset 0 -24px 42px rgba(0, 0, 0, 0.2),
+      0 28px 54px rgba(0, 0, 0, 0.38),
+      0 0 34px rgba(255, 45, 45, 0.24);
+  }
+
+  .panel-headline {
+    background: linear-gradient(90deg, #ffffff 0%, #ffb5b5 52%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 12px rgba(255, 45, 45, 0.28);
+  }
+
+  .panel-subtext {
+    color: rgba(255, 255, 255, 0.66);
+  }
+
+  .glass-input {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%),
+      rgba(10, 10, 10, 0.48);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.06),
+      inset 0 -10px 16px rgba(0, 0, 0, 0.18),
+      0 8px 18px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(12px);
+    transition:
+      border-color 0.25s ease,
+      box-shadow 0.25s ease,
+      transform 0.25s ease;
+  }
+
+  .glass-input:hover {
+    border-color: rgba(255, 45, 45, 0.2);
+  }
+
+  .glass-input:focus {
+    border-color: rgba(255, 45, 45, 0.38);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.08),
+      0 0 0 3px rgba(255, 45, 45, 0.16),
+      0 12px 22px rgba(0, 0, 0, 0.28),
+      0 0 20px rgba(255, 45, 45, 0.14);
+    transform: translateY(-1px);
+  }
+
+  .preview-frame {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    background:
+      radial-gradient(circle at top, rgba(255, 45, 45, 0.18), transparent 40%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%),
+      rgba(9, 9, 12, 0.68);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.08),
+      0 24px 54px rgba(0, 0, 0, 0.38),
+      0 0 30px rgba(255, 45, 45, 0.16);
+  }
+
+  .tool-row {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%),
+      rgba(14, 14, 18, 0.62);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.08),
+      0 12px 26px rgba(0, 0, 0, 0.24);
+    transition:
+      transform 0.3s ease,
+      border-color 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .tool-row:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 45, 45, 0.26);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.1),
+      0 16px 28px rgba(0, 0, 0, 0.28),
+      0 0 18px rgba(255, 45, 45, 0.14);
+  }
+
+  .editor-chip {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  .canvas-stage-grid {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+
   @keyframes neon-gradient-shift {
     0%,
     100% {
